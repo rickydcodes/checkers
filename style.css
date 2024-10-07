@@ -1,0 +1,90 @@
+html, body {
+    height: 100%;
+   background-color: beige;
+ }
+ 
+ h1 {
+    text-align: center;
+    font-family: sans-serif;
+ }
+ 
+ #playingArea {
+   font-size: 0;
+   border: 2px solid black;
+   display: inline-block;
+ }
+ 
+ #centerDiv {
+    text-align: center;
+ }
+ 
+ #sidePanel {
+    margin: 8px;
+ }
+ 
+ #sidePanel div {
+    margin-top: 10px;
+ }
+ 
+ #startButton {
+   padding: 5px;
+   width: 75px;
+   border: 2px solid black;
+   background-color: white;
+   cursor: pointer;
+ }
+ 
+ .square {
+    width: 60px;
+    height: 60px;
+    border: 2px solid black;
+    display: inline-block;
+ }
+ 
+ .row:nth-child(even) .square:nth-child(even) {
+    background-color: white;
+ }
+ 
+ .row:nth-child(even) .square:nth-child(odd) {
+   background-color: #b0b0b0;
+ }
+ 
+ .row:nth-child(odd) .square:nth-child(odd) {
+    background-color: white;
+ }
+ 
+ .row:nth-child(odd) .square:nth-child(even) {
+   background-color: #b0b0b0;
+ }
+ 
+ .red {
+    background-image: url("assets/red_checker.png");
+ }
+ 
+ .red.king {
+   background-image: url("assets/red_king.png");
+ }
+ 
+ .black {
+    background-image: url("assets/black_checker.png");
+ }
+ 
+ .black.king {
+   background-image: url("assets/black_king.png");
+ }
+ 
+ #playingArea .possibility {
+    background-color: #cdff42;
+    cursor: pointer;
+ }
+ 
+ .black.king,.red.king,.red,.black {
+    background-size: cover;
+    cursor: pointer;
+ }
+ 
+ #winParagraph {
+    color: orangered;
+    font-size: 30px;
+    font-family: monospace;
+ }
